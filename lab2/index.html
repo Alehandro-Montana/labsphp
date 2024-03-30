@@ -1,0 +1,69 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Лаба2</title>
+    
+</head>
+<body>
+    <h2>Введіть два числа</h2>
+    <form action="math.php" method="post">
+        <label for="num1">Число 1:</label>
+        <input type="text" id="num1" name="num1"><br><br>
+        <label for="num2">Число 2:</label>
+        <input type="text" id="num2" name="num2"><br><br>
+        <input type="submit" value="Вивести дії, а  також перевірити число на парність">
+        
+    </form>
+    <hr>
+    <h2>Введіть логін та пароль</h2>
+    <form action="check_info.php" method="post">
+        <label for="login">Логін:</label>
+        <input type="text" id="login" name="login"><br><br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Перевірити">
+    </form>
+    <hr>
+    <h2>Вгадай число</h2>
+    <form action="check_numb.php" id="guessForm" method="post">
+        <label for="number">Введіть число:</label>
+        <input type="number" id="secretNumber" name="secretNumber">
+        <button type="button"  onclick="check_number()">Відгадати</button>
+    </form>
+    <script src="check.js">
+    </script>
+    <hr>
+    <h2>Таблиця множення</h2>
+    <form method="post" action="table.php" >
+        <label for="number">Введіть число:</label>
+        <input type="number" id="number" name="number" required>
+        <button type="submit">Показати таблицю множення</button>
+    </form>
+    <hr>
+    <h2>Введіть діапазон</h2>
+    <form method="post" action="diapason.php">
+        <label for="start">Початок діапазону:</label>
+        <input type="number" id="start" name="start" required>
+        <label for="end">Кінець діапазону:</label>
+        <input type="number" id="end" name="end" required>
+        <button type="submit">Вивести таблицю відношення</button>
+    </form>
+    <hr>
+    <h2>Введіть дані про ріст бактерій</h2>
+    <form method="post" action="bacteria.php">
+    <label for="initbacteria">Початкова кількість бактерій:</label>
+    <input type="number" id="initbacteria" name="initbacteria" required>
+    <label for="finalbact">Кінцева кількість бактерій:</label>
+    <input type="number" id="finalbact" name="finalbact" required>
+    <button type="submit">Показати рівень росту</button>
+</form>
+<hr>
+<h2>Таблиця множення остання</h2>
+<form method="post" action="multi.php">
+    <label for="numeric">Введіть число (від 2 до 9):</label>
+    <input type="numeric" id="numeric" name="numeric" min="2" max="9" required>
+    <button type="submit">Показати таблицю множення</button>
+</form>
+</body>
+</html>
