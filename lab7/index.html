@@ -1,0 +1,41 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteDB</title>
+</head>
+<body>
+    <h2>Додайте замеітки</h2>
+    <form action="connect.php" method="POST">
+        <label for="title">Заголовок:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+        <label for="article">Текст:</label><br>
+        <textarea id="article" name="article" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Додати замітку</button>
+    </form>
+    <hr>
+    <h2>Додайте коментарі</h2>
+    <form action="connect.php" method="post">
+        <label for="author">Автор:</label><br>
+        <input type="text" id="author" name="author"><br>
+        <label for="comment">Коментар:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+        <label for="art_id">Article ID:</label><br>
+        <input type="number" id="art_id" name="art_id"><br><br>
+        <input type="submit" value="Create Comment">
+    </form>
+    <hr>
+    <h2>Реєстрація користувача</h2>
+    <form action="connect.php" method="POST">
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="rights">Права доступа:</label><br>
+        <input type="text" id="rights" name="rights" required><br><br>
+        <button type="submit">Зареєструвати</button>
+    </form>
+    <hr>
+</body>
+</html>

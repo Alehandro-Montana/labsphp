@@ -1,0 +1,33 @@
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация пользователя</title>
+</head>
+<body>
+    <h2>Регистрация пользователя</h2>
+    <form action="bdGubanov.php" method="post" enctype="multipart/form-data">
+        <label for="login">Логин:</label><br>
+        <input type="text" id="login" name="login" required><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="birthdate">Дата рождения:</label><br>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+        <label for="gender">Пол:</label><br>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Мужской</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женский</label><br>
+        <label for="country">Страна:</label><br>
+        <input type="text" id="country" name="country" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="note">Примечание:</label><br>
+        <textarea id="note" name="note" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+</body>
+</html>
